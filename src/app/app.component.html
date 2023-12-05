@@ -1,0 +1,24 @@
+<body>
+<h6>Ejemplo de utilización de un componente tabla, pasandole varias tuplas de datos diferentes</h6>
+<br>
+<div class="row">
+  <div class="col-sm-6">
+    <h6>LIBROS</h6>
+    <app-tabla [cabeceras]="misCabeceras" [datos]="misDatosL"></app-tabla>
+  </div>
+  <div class="col-sm-6">
+    <h6>REVISTAS</h6>
+    <app-tabla [cabeceras]="misCabeceras" [datos]="misDatosR"></app-tabla>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <h6>MÚSICA</h6>
+    <app-tabla [cabeceras]="misCabeceras" [datos]="misDatosM"></app-tabla>
+  </div>
+  <div class="col-sm-6">
+    <h6>CINE</h6>
+    <app-tabla [cabeceras]="misCabeceras" [datos]="misDatosC"></app-tabla>
+  </div>
+</div>
+</body>
