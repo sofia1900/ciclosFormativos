@@ -1,5 +1,23 @@
 <body>
   <div id="cuerpo" class="border border-black border-3">
-  Cuerpo
-</div>
+    <h4>Cuerpo</h4>
+    <h6>Ejemplo de utilización de un componente tabla, pasandole varias tuplas de datos diferentes</h6>
+    <br>
+    <div class="row">
+      <div class="col-sm-6">
+        <app-tabla titulo="LIBROS" [cabeceras]="misCabeceras" [datos]="misDatosL"></app-tabla>
+      </div>
+      <div class="col-sm-6">
+        <app-tabla titulo="REVISTAS" [cabeceras]="misCabeceras" [datos]="misDatosR"></app-tabla>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <app-tabla titulo="MUSICA" [cabeceras]="misCabeceras" [datos]="misDatosM"></app-tabla>
+      </div>
+      <div class="col-sm-6">
+        <app-tabla titulo="C" [cabeceras]="misCabeceras" [datos]="misDatosC"></app-tabla>
+      </div>
+    </div>
+  </div>
 </body>
