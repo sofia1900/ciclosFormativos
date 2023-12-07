@@ -1,22 +1,20 @@
 <body>
-  <div id="cuerpo" class="border border-black border-3">
-    <h4>Cuerpo</h4>
-    <h6>Ejemplo de utilización de un componente tabla, pasandole varias tuplas de datos diferentes</h6>
-    <br>
+  <div id="cuerpo">
     <div class="row">
-      <div class="col-sm-6">
-        <app-tabla titulo="LIBROS" [cabeceras]="misCabeceras" [datos]="misDatosL"></app-tabla>
+      <div class="col">
+        <app-recuadro [boton]="boton" [tituloT]="cabeceraDAM" [datosT]="datosDAM" ></app-recuadro>
       </div>
-      <div class="col-sm-6">
-        <app-tabla titulo="REVISTAS" [cabeceras]="misCabeceras" [datos]="misDatosR"></app-tabla>
+      <div class="col">
+         <app-recuadro [boton]="boton" [tituloT]="cabeceraDAW" [datosT]="datosDAW"></app-recuadro>
       </div>
     </div>
+    <br>
     <div class="row">
-      <div class="col-sm-6">
-        <app-tabla titulo="MUSICA" [cabeceras]="misCabeceras" [datos]="misDatosM"></app-tabla>
+      <div class="col">
+        <app-recuadro [boton]="boton" [tituloT]="cabeceraASIR" [datosT]="datosASIR"></app-recuadro>
       </div>
-      <div class="col-sm-6">
-        <app-tabla titulo="CINE" [cabeceras]="misCabeceras" [datos]="misDatosC"></app-tabla>
+      <div class="col">
+        <app-recuadro [boton]="boton" [tituloT]="cabecera" [datosT]="datos"></app-recuadro>
       </div>
     </div>
   </div>

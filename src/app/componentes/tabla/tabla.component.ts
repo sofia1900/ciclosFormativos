@@ -11,7 +11,7 @@ import {NgForOf} from "@angular/common";
   styleUrl: './tabla.component.css'
 })
 export class TablaComponent {
+  cabeceras = ["Nº", "Alumno"];
   @Input() titulo : string = ""
-  @Input() cabeceras: any[] = [];
   @Input() datos: any[] = [];
 }

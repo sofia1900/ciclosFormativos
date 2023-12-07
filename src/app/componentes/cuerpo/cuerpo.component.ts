@@ -1,35 +1,43 @@
 import { Component } from '@angular/core';
 import {TablaComponent} from "../tabla/tabla.component";
+import {RecuadroComponent} from "../recuadro/recuadro.component";
 
 @Component({
   selector: 'app-cuerpo',
   standalone: true,
   imports: [
-    TablaComponent
+    TablaComponent,
+    RecuadroComponent
   ],
   templateUrl: './cuerpo.component.html',
   styleUrl: './cuerpo.component.css'
 })
 export class CuerpoComponent {
-  misCabeceras: string[] = ["Titulo", "Autor"];
-  misDatosL: any[] = [
-    { "Titulo": "El quijote", "Autor": "Cervantes" },
-    { "Titulo": "100 años de soledad", "Autor": "Gabriel García Márquez" },
-    { "Titulo": "Los pilares de la Tierra", "Autor": "Ken Follet" }
+  cabeceraDAM = "DAM";
+  cabeceraDAW = "DAW";
+  cabeceraASIR = "ASIR";
+  cabecera = "...";
+
+  boton = "Consultar";
+
+  datosDAM: any[] = [
+    "Daniel Andela López",
+    "José María Dorado Ruiz",
+    "Natalia Cano López"
   ];
-  misDatosR: any[] = [
-    { "Titulo": "Jara y sedal", "Autor": "A.Lopez" },
-    { "Titulo": "Pc Computer", "Autor": "MA Editorial" },
-    { "Titulo": "Muy Interesante", "Autor": "SA Edition" }
+  datosDAW: any[] = [
+    "María Muñoz López",
+    "José Rodríguez Martín",
+    "Lucía Sánchez Arribas"
   ];
-  misDatosM: any[] = [
-    { "Titulo": "Rapsody", "Autor": "Queen" },
-    { "Titulo": "Motomamy", "Autor": "Rosalía" },
-    { "Titulo": "Despechada", "Autor": "Shakira" }
+  datosASIR: any[] = [
+    "Alejandro Galán López",
+    "José María Dorado Ruiz",
+    "Arturo Carrasco Pérez"
   ];
-  misDatosC: any[] = [
-    { "Titulo": "Napoleón", "Autor": "Ridley Scoot" },
-    { "Titulo": "Frozen", "Autor": "Jennifer Lee" },
-    { "Titulo": "Titanic", "Autor": "James Cameron" }
+  datos: any[] = [
+    "Silvia Muñoz López",
+    "María Martínez Ruiz",
+    "Jorge Nieto López"
   ];
 }
